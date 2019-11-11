@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ExEmitterView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of ExEmitterView.'
 
   s.homepage         = 'https://github.com/samspirit/ExEmitterView'

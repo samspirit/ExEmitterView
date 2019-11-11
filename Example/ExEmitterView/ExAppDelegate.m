@@ -7,12 +7,21 @@
 //
 
 #import "ExAppDelegate.h"
+#import "ExMainTableViewModel.h"
+#import "ExMainTableViewController.h"
 
 @implementation ExAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    UIWindow *window = [UIApplication sharedApplication].delegate.window;
+    ExMainTableViewController *tabbar = [[ExMainTableViewController alloc] initWithViewModel:[ExMainTableViewModel new]];
+    UINavigationController *rootViewController = [[UINavigationController alloc] initWithRootViewController:tabbar];
+    window.rootViewController = rootViewController;
+    [window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -4,6 +4,8 @@ platform :ios, '8.0'
 
 target 'ExEmitterView_Example' do
   pod 'ExEmitterView', :path => '../'
+  
+  pod 'ExMVVMKit'
 
   target 'ExEmitterView_Tests' do
     inherit! :search_paths

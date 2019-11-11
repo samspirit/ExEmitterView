@@ -6,8 +6,8 @@
 //  Copyright (c) 2019 samspirit. All rights reserved.
 //
 
-@import UIKit;
+#import <ExMVVMKit/ExMVVMKit.h>
 
-@interface ExViewController : UIViewController
+@interface ExMainTableViewController : BaseTableViewController
 
 @end

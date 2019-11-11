@@ -23,7 +23,14 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BDAEF30B23792EB100E7AB58 /* ExAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF30923792EB000E7AB58 /* ExAppDelegate.m */; };
-		BDAEF30E23792EE000E7AB58 /* ExViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF30C23792EDF00E7AB58 /* ExViewController.m */; };
+		BDAEF354237939F900E7AB58 /* ExButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF353237939F900E7AB58 /* ExButtonViewController.m */; };
+		BDAEF35B23793D2C00E7AB58 /* ExButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF35A23793D2C00E7AB58 /* ExButtonViewModel.m */; };
+		BDAEF36A2379407800E7AB58 /* ExMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3682379407700E7AB58 /* ExMainTableViewController.m */; };
+		BDAEF36D237940B000E7AB58 /* ExMainTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF36C237940B000E7AB58 /* ExMainTableViewModel.m */; };
+		BDAEF370237941CA00E7AB58 /* ExDownloaderSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF36F237941CA00E7AB58 /* ExDownloaderSimulator.m */; };
+		BDAEF3732379429200E7AB58 /* ExDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3722379429200E7AB58 /* ExDefaultViewController.m */; };
+		BDAEF37623795D0500E7AB58 /* ExCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF37523795D0500E7AB58 /* ExCustomViewController.m */; };
+		BDAEF37923795E6F00E7AB58 /* ExComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF37823795E6F00E7AB58 /* ExComponentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +70,22 @@
 		AB36266B4415DF6DF3505138 /* Pods-ExEmitterView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExEmitterView_Example.debug.xcconfig"; path = "Target Support Files/Pods-ExEmitterView_Example/Pods-ExEmitterView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BDAEF30923792EB000E7AB58 /* ExAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExAppDelegate.m; sourceTree = "<group>"; };
 		BDAEF30A23792EB100E7AB58 /* ExAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExAppDelegate.h; sourceTree = "<group>"; };
-		BDAEF30C23792EDF00E7AB58 /* ExViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExViewController.m; sourceTree = "<group>"; };
-		BDAEF30D23792EE000E7AB58 /* ExViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExViewController.h; sourceTree = "<group>"; };
+		BDAEF352237939F900E7AB58 /* ExButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExButtonViewController.h; sourceTree = "<group>"; };
+		BDAEF353237939F900E7AB58 /* ExButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExButtonViewController.m; sourceTree = "<group>"; };
+		BDAEF35923793D2C00E7AB58 /* ExButtonViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExButtonViewModel.h; sourceTree = "<group>"; };
+		BDAEF35A23793D2C00E7AB58 /* ExButtonViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExButtonViewModel.m; sourceTree = "<group>"; };
+		BDAEF3682379407700E7AB58 /* ExMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExMainTableViewController.m; sourceTree = "<group>"; };
+		BDAEF3692379407700E7AB58 /* ExMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExMainTableViewController.h; sourceTree = "<group>"; };
+		BDAEF36B237940B000E7AB58 /* ExMainTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExMainTableViewModel.h; sourceTree = "<group>"; };
+		BDAEF36C237940B000E7AB58 /* ExMainTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExMainTableViewModel.m; sourceTree = "<group>"; };
+		BDAEF36E237941CA00E7AB58 /* ExDownloaderSimulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExDownloaderSimulator.h; sourceTree = "<group>"; };
+		BDAEF36F237941CA00E7AB58 /* ExDownloaderSimulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExDownloaderSimulator.m; sourceTree = "<group>"; };
+		BDAEF3712379429200E7AB58 /* ExDefaultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExDefaultViewController.h; sourceTree = "<group>"; };
+		BDAEF3722379429200E7AB58 /* ExDefaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExDefaultViewController.m; sourceTree = "<group>"; };
+		BDAEF37423795D0500E7AB58 /* ExCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExCustomViewController.h; sourceTree = "<group>"; };
+		BDAEF37523795D0500E7AB58 /* ExCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExCustomViewController.m; sourceTree = "<group>"; };
+		BDAEF37723795E6F00E7AB58 /* ExComponentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExComponentViewController.h; sourceTree = "<group>"; };
+		BDAEF37823795E6F00E7AB58 /* ExComponentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExComponentViewController.m; sourceTree = "<group>"; };
 		C201A9B08F9A491D933D3CA1 /* Pods_ExEmitterView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExEmitterView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5745AE03626274927C58B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,9 +155,9 @@
 			children = (
 				BDAEF30A23792EB100E7AB58 /* ExAppDelegate.h */,
 				BDAEF30923792EB000E7AB58 /* ExAppDelegate.m */,
+				BDAEF35C2379400F00E7AB58 /* Main */,
+				BDAEF350237939A700E7AB58 /* ButtonControl */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				BDAEF30D23792EE000E7AB58 /* ExViewController.h */,
-				BDAEF30C23792EDF00E7AB58 /* ExViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -196,6 +217,68 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BDAEF350237939A700E7AB58 /* ButtonControl */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF351237939A700E7AB58 /* Controller */,
+				BDAEF35523793A2000E7AB58 /* Download */,
+			);
+			path = ButtonControl;
+			sourceTree = "<group>";
+		};
+		BDAEF351237939A700E7AB58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF352237939F900E7AB58 /* ExButtonViewController.h */,
+				BDAEF353237939F900E7AB58 /* ExButtonViewController.m */,
+				BDAEF35923793D2C00E7AB58 /* ExButtonViewModel.h */,
+				BDAEF35A23793D2C00E7AB58 /* ExButtonViewModel.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDAEF35523793A2000E7AB58 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF36E237941CA00E7AB58 /* ExDownloaderSimulator.h */,
+				BDAEF36F237941CA00E7AB58 /* ExDownloaderSimulator.m */,
+				BDAEF3712379429200E7AB58 /* ExDefaultViewController.h */,
+				BDAEF3722379429200E7AB58 /* ExDefaultViewController.m */,
+				BDAEF37423795D0500E7AB58 /* ExCustomViewController.h */,
+				BDAEF37523795D0500E7AB58 /* ExCustomViewController.m */,
+				BDAEF37723795E6F00E7AB58 /* ExComponentViewController.h */,
+				BDAEF37823795E6F00E7AB58 /* ExComponentViewController.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		BDAEF35C2379400F00E7AB58 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF35D2379400F00E7AB58 /* ViewModel */,
+				BDAEF3602379400F00E7AB58 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BDAEF35D2379400F00E7AB58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF36B237940B000E7AB58 /* ExMainTableViewModel.h */,
+				BDAEF36C237940B000E7AB58 /* ExMainTableViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDAEF3602379400F00E7AB58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF3692379407700E7AB58 /* ExMainTableViewController.h */,
+				BDAEF3682379407700E7AB58 /* ExMainTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,7 +326,7 @@
 		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = EX;
+				CLASSPREFIX = Ex;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "11873288@qq.com";
 				TargetAttributes = {
@@ -302,11 +385,25 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ExEmitterView_Example/Pods-ExEmitterView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ExEmitterView/ExEmitterView.framework",
+				"${BUILT_PRODUCTS_DIR}/ExMVVMKit/ExMVVMKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExEmitterView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExMVVMKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,9 +461,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAEF30E23792EE000E7AB58 /* ExViewController.m in Sources */,
+				BDAEF370237941CA00E7AB58 /* ExDownloaderSimulator.m in Sources */,
+				BDAEF36D237940B000E7AB58 /* ExMainTableViewModel.m in Sources */,
+				BDAEF36A2379407800E7AB58 /* ExMainTableViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				BDAEF30B23792EB100E7AB58 /* ExAppDelegate.m in Sources */,
+				BDAEF3732379429200E7AB58 /* ExDefaultViewController.m in Sources */,
+				BDAEF354237939F900E7AB58 /* ExButtonViewController.m in Sources */,
+				BDAEF37623795D0500E7AB58 /* ExCustomViewController.m in Sources */,
+				BDAEF35B23793D2C00E7AB58 /* ExButtonViewModel.m in Sources */,
+				BDAEF37923795E6F00E7AB58 /* ExComponentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,9 +598,11 @@
 			baseConfigurationReference = AB36266B4415DF6DF3505138 /* Pods-ExEmitterView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExEmitterView/ExEmitterView-Prefix.pch";
 				INFOPLIST_FILE = "ExEmitterView/ExEmitterView-Info.plist";
+				MARKETING_VERSION = 1.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +616,11 @@
 			baseConfigurationReference = 98A58FC6294F64CB11A33894 /* Pods-ExEmitterView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExEmitterView/ExEmitterView-Prefix.pch";
 				INFOPLIST_FILE = "ExEmitterView/ExEmitterView-Info.plist";
+				MARKETING_VERSION = 1.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
