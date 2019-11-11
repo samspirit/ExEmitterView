@@ -1,0 +1,16 @@
+PODS:
+  - ExEmitterView (0.1.0)
+
+DEPENDENCIES:
+  - ExEmitterView (from `../`)
+
+EXTERNAL SOURCES:
+  ExEmitterView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ExEmitterView: aeccd6b47dd4acb3aaa33e2f412d88763bde6699
+
+PODFILE CHECKSUM: 55dd30b936fd1b84174c5eb73b50bcfd7a6c0381
+
+COCOAPODS: 1.7.4
