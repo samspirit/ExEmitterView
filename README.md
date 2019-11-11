@@ -27,3 +27,10 @@ samspirit, 11873288@qq.com
 ## License
 
 ExEmitterView is available under the MIT license. See the LICENSE file for more info.
+
+## 更新日志
+####版本更新日志
+```ruby
+#### version 0.1.1
+1.add ExDownloadButton 仿App Store下载按钮（带进度条）
+```
