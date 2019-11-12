@@ -28,10 +28,9 @@ static const CGFloat kDefaultSpinTime = 1.f;
 
 static ExWaitingView *CommonInit(ExWaitingView *self) {
     if (self != nil) {
-        ExWaitingView *circleView = [self createCircleView];
-        circleView.translatesAutoresizingMaskIntoConstraints = NO;
-        [self addSubview:circleView];
-        self.circleView = circleView;
+        self.circleView = [self createCircleView];
+        self.circleView.translatesAutoresizingMaskIntoConstraints = NO;
+        [self addSubview:self.circleView];
         self.circleView.userInteractionEnabled = NO;
         [self addConstraints:[self createConstraints]];
         

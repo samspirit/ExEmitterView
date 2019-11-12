@@ -31,6 +31,13 @@
 		BDAEF3732379429200E7AB58 /* ExDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3722379429200E7AB58 /* ExDefaultViewController.m */; };
 		BDAEF37623795D0500E7AB58 /* ExCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF37523795D0500E7AB58 /* ExCustomViewController.m */; };
 		BDAEF37923795E6F00E7AB58 /* ExComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF37823795E6F00E7AB58 /* ExComponentViewController.m */; };
+		BDAEF3A7237A4EBA00E7AB58 /* ExPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3A6237A4EBA00E7AB58 /* ExPageViewController.m */; };
+		BDAEF3AB237A594E00E7AB58 /* ExTitlePageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3AA237A594E00E7AB58 /* ExTitlePageManager.m */; };
+		BDAEF3AE237A5F6D00E7AB58 /* ExIndicatorPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3AD237A5F6D00E7AB58 /* ExIndicatorPageManager.m */; };
+		BDAEF3B4237A5FB900E7AB58 /* ExUserPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3B3237A5FB900E7AB58 /* ExUserPageManager.m */; };
+		BDAEF3B7237A5FC700E7AB58 /* ExPropertiesPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3B6237A5FC700E7AB58 /* ExPropertiesPageManager.m */; };
+		BDAEF3BA237A83DE00E7AB58 /* ExShowPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3B9237A83DE00E7AB58 /* ExShowPageViewController.m */; };
+		BDAEF3BE237A86B300E7AB58 /* ExPageBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF3BD237A86B300E7AB58 /* ExPageBaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +93,20 @@
 		BDAEF37523795D0500E7AB58 /* ExCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExCustomViewController.m; sourceTree = "<group>"; };
 		BDAEF37723795E6F00E7AB58 /* ExComponentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExComponentViewController.h; sourceTree = "<group>"; };
 		BDAEF37823795E6F00E7AB58 /* ExComponentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExComponentViewController.m; sourceTree = "<group>"; };
+		BDAEF3A5237A4EBA00E7AB58 /* ExPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExPageViewController.h; sourceTree = "<group>"; };
+		BDAEF3A6237A4EBA00E7AB58 /* ExPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExPageViewController.m; sourceTree = "<group>"; };
+		BDAEF3A9237A594E00E7AB58 /* ExTitlePageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExTitlePageManager.h; sourceTree = "<group>"; };
+		BDAEF3AA237A594E00E7AB58 /* ExTitlePageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExTitlePageManager.m; sourceTree = "<group>"; };
+		BDAEF3AC237A5F6D00E7AB58 /* ExIndicatorPageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExIndicatorPageManager.h; sourceTree = "<group>"; };
+		BDAEF3AD237A5F6D00E7AB58 /* ExIndicatorPageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExIndicatorPageManager.m; sourceTree = "<group>"; };
+		BDAEF3B2237A5FB800E7AB58 /* ExUserPageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExUserPageManager.h; sourceTree = "<group>"; };
+		BDAEF3B3237A5FB900E7AB58 /* ExUserPageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExUserPageManager.m; sourceTree = "<group>"; };
+		BDAEF3B5237A5FC700E7AB58 /* ExPropertiesPageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExPropertiesPageManager.h; sourceTree = "<group>"; };
+		BDAEF3B6237A5FC700E7AB58 /* ExPropertiesPageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExPropertiesPageManager.m; sourceTree = "<group>"; };
+		BDAEF3B8237A83DE00E7AB58 /* ExShowPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExShowPageViewController.h; sourceTree = "<group>"; };
+		BDAEF3B9237A83DE00E7AB58 /* ExShowPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExShowPageViewController.m; sourceTree = "<group>"; };
+		BDAEF3BC237A86B300E7AB58 /* ExPageBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExPageBaseManager.h; sourceTree = "<group>"; };
+		BDAEF3BD237A86B300E7AB58 /* ExPageBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExPageBaseManager.m; sourceTree = "<group>"; };
 		C201A9B08F9A491D933D3CA1 /* Pods_ExEmitterView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExEmitterView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5745AE03626274927C58B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +176,7 @@
 			children = (
 				BDAEF30A23792EB100E7AB58 /* ExAppDelegate.h */,
 				BDAEF30923792EB000E7AB58 /* ExAppDelegate.m */,
+				BDAEF3A1237A4C3300E7AB58 /* PageControl */,
 				BDAEF35C2379400F00E7AB58 /* Main */,
 				BDAEF350237939A700E7AB58 /* ButtonControl */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -279,6 +301,43 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		BDAEF3A1237A4C3300E7AB58 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF3BB237A869C00E7AB58 /* Manager */,
+				BDAEF3A8237A593100E7AB58 /* ViewController */,
+				BDAEF3A5237A4EBA00E7AB58 /* ExPageViewController.h */,
+				BDAEF3A6237A4EBA00E7AB58 /* ExPageViewController.m */,
+				BDAEF3B8237A83DE00E7AB58 /* ExShowPageViewController.h */,
+				BDAEF3B9237A83DE00E7AB58 /* ExShowPageViewController.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		BDAEF3A8237A593100E7AB58 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF3A9237A594E00E7AB58 /* ExTitlePageManager.h */,
+				BDAEF3AA237A594E00E7AB58 /* ExTitlePageManager.m */,
+				BDAEF3AC237A5F6D00E7AB58 /* ExIndicatorPageManager.h */,
+				BDAEF3AD237A5F6D00E7AB58 /* ExIndicatorPageManager.m */,
+				BDAEF3B2237A5FB800E7AB58 /* ExUserPageManager.h */,
+				BDAEF3B3237A5FB900E7AB58 /* ExUserPageManager.m */,
+				BDAEF3B5237A5FC700E7AB58 /* ExPropertiesPageManager.h */,
+				BDAEF3B6237A5FC700E7AB58 /* ExPropertiesPageManager.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BDAEF3BB237A869C00E7AB58 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEF3BC237A86B300E7AB58 /* ExPageBaseManager.h */,
+				BDAEF3BD237A86B300E7AB58 /* ExPageBaseManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,7 +386,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Ex;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "11873288@qq.com";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -392,6 +451,7 @@
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -403,6 +463,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,15 +523,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAEF370237941CA00E7AB58 /* ExDownloaderSimulator.m in Sources */,
+				BDAEF3BE237A86B300E7AB58 /* ExPageBaseManager.m in Sources */,
+				BDAEF3A7237A4EBA00E7AB58 /* ExPageViewController.m in Sources */,
+				BDAEF3B7237A5FC700E7AB58 /* ExPropertiesPageManager.m in Sources */,
 				BDAEF36D237940B000E7AB58 /* ExMainTableViewModel.m in Sources */,
 				BDAEF36A2379407800E7AB58 /* ExMainTableViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				BDAEF3B4237A5FB900E7AB58 /* ExUserPageManager.m in Sources */,
 				BDAEF30B23792EB100E7AB58 /* ExAppDelegate.m in Sources */,
 				BDAEF3732379429200E7AB58 /* ExDefaultViewController.m in Sources */,
 				BDAEF354237939F900E7AB58 /* ExButtonViewController.m in Sources */,
+				BDAEF3AE237A5F6D00E7AB58 /* ExIndicatorPageManager.m in Sources */,
 				BDAEF37623795D0500E7AB58 /* ExCustomViewController.m in Sources */,
+				BDAEF3AB237A594E00E7AB58 /* ExTitlePageManager.m in Sources */,
 				BDAEF35B23793D2C00E7AB58 /* ExButtonViewModel.m in Sources */,
 				BDAEF37923795E6F00E7AB58 /* ExComponentViewController.m in Sources */,
+				BDAEF3BA237A83DE00E7AB58 /* ExShowPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,23 +592,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -553,7 +635,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -564,29 +646,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -598,11 +694,11 @@
 			baseConfigurationReference = AB36266B4415DF6DF3505138 /* Pods-ExEmitterView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExEmitterView/ExEmitterView-Prefix.pch";
 				INFOPLIST_FILE = "ExEmitterView/ExEmitterView-Info.plist";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,11 +712,11 @@
 			baseConfigurationReference = 98A58FC6294F64CB11A33894 /* Pods-ExEmitterView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExEmitterView/ExEmitterView-Prefix.pch";
 				INFOPLIST_FILE = "ExEmitterView/ExEmitterView-Info.plist";
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

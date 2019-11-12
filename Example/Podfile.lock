@@ -14,66 +14,73 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - ExEmitterView (0.1.1)
-  - ExMVVMKit (0.2.10):
-    - ExMVVMKit/BaseMVVM (= 0.2.10)
-    - ExMVVMKit/Category (= 0.2.10)
-    - ExMVVMKit/External (= 0.2.10)
-    - ExMVVMKit/ModuleRouter (= 0.2.10)
-    - ExMVVMKit/Serivce (= 0.2.10)
+  - ExEmitterView (0.1.2)
+  - ExMVVMKit (0.2.11):
+    - ExMVVMKit/BaseMVVM (= 0.2.11)
+    - ExMVVMKit/Category (= 0.2.11)
+    - ExMVVMKit/External (= 0.2.11)
+    - ExMVVMKit/ModuleRouter (= 0.2.11)
+    - ExMVVMKit/Serivce (= 0.2.11)
     - ReactiveObjC
-  - ExMVVMKit/BaseMVVM (0.2.10):
+  - ExMVVMKit/BaseMVVM (0.2.11):
     - ExMVVMKit/Category
     - ExMVVMKit/External
     - Masonry
     - MJRefresh
     - ReactiveObjC
     - YYModel
-  - ExMVVMKit/Category (0.2.10):
+  - ExMVVMKit/Category (0.2.11):
     - ExMVVMKit/ModuleRouter
     - ReactiveObjC
-  - ExMVVMKit/External (0.2.10):
+  - ExMVVMKit/External (0.2.11):
     - MBProgressHUD
     - ReactiveObjC
-  - ExMVVMKit/ModuleRouter (0.2.10):
+  - ExMVVMKit/ModuleRouter (0.2.11):
     - ReactiveObjC
-  - ExMVVMKit/Serivce (0.2.10):
+  - ExMVVMKit/Serivce (0.2.11):
     - AFNetworking
     - ReactiveObjC
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
-  - MJRefresh (3.2.0)
+  - MJRefresh (3.2.2)
   - ReactiveObjC (3.1.1)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - ExEmitterView (from `../`)
-  - ExMVVMKit
+  - ExMVVMKit (from `../../ExMVVMKit/ExMVVMKit.podspec`)
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - ExMVVMKit
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - ReactiveObjC
+    - SDWebImage
     - YYModel
 
 EXTERNAL SOURCES:
   ExEmitterView:
     :path: "../"
+  ExMVVMKit:
+    :path: "../../ExMVVMKit/ExMVVMKit.podspec"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  ExEmitterView: 42c17b6dd270e81f91cb95099cd81cb1508b8250
-  ExMVVMKit: 6391ac2bd3baa5fcec6ddd20b0001f8e93af6bf1
+  ExEmitterView: 19d05d47ba8ef149b70acd44b3149a2096a260a3
+  ExMVVMKit: 6e978620f3420ccb2f991c273e3024a8ad5bc47c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 3ee3717f09c4c8015120674027b780843814c7a0
+PODFILE CHECKSUM: 952cbe71abcc33c2653082a6ae0fb80197dd04e8
 
 COCOAPODS: 1.7.4

@@ -12,6 +12,8 @@
 #import "ExButtonViewController.h"
 #import "ExButtonViewModel.h"
 
+#import "ExPageViewController.h"
+
 @interface ExMainTableViewController ()
 @property (nonatomic, strong) ExMainTableViewModel *viewModel;
 @property (nonatomic, strong) NSMutableArray *group;
@@ -35,8 +37,9 @@
         [self.navigationController pushViewController:buttonVC animated:YES];
     };
     
-    ExLabelItem *item1 = [ExLabelItem itemWithTitle:@"通用1"];
-    item1.title = @"通用1";
+    ExLabelItem *item1 = [ExLabelItem itemWithTitle:@"Page Control"];
+    item1.title = @"Page Control";
+    item1.descVc = [ExPageViewController class];
     
     ExLabelItem *item2 = [ExLabelItem itemWithTitle:@"通用0"];
     item2.title = @"通用2";

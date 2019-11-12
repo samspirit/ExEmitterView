@@ -11,5 +11,6 @@
 #pragma mark - ExButton
 // 仿 App Store 下载按钮（带进度条）
 #import "ExDownloadButton.h"
-
+// Page Control
+#import "ExPageController.h"
 #endif /* ExEmitterView_h */
