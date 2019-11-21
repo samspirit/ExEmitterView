@@ -9,30 +9,19 @@
 
 static const CGFloat kDefaultLineWidth = 1.f;
 
-@interface ExCircleView()
-- (void)drawCircleRadius:(CGFloat)radius rect:(CGRect)rect startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngel lineWidth:(CGFloat)lineWidth;
-@end
+@implementation ExCircleView
 
-static ExCircleView *CommonInit(ExCircleView *self) {
-    if (self != nil) {
+#pragma mark - initialization
+-(instancetype)init
+{
+    if (self = [super init]) {
         self.backgroundColor = [UIColor clearColor];
         self.startAngleRadians = M_PI * 1.5;
+        self.translatesAutoresizingMaskIntoConstraints = NO;
         self.endAngleRadians = self.startAngleRadians + (M_PI * 2);
         self.lineWidth = kDefaultLineWidth;
     }
     return self;
-}
-
-@implementation ExCircleView
-
-#pragma mark - initialization
-
-- (id)initWithCoder:(NSCoder *)decoder {
-    return CommonInit([super initWithCoder:decoder]);
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    return CommonInit([super initWithFrame:frame]);
 }
 
 #pragma mark - properties
@@ -68,5 +57,9 @@ static ExCircleView *CommonInit(ExCircleView *self) {
     
     bezierPath.lineWidth = lineWidth;
     [bezierPath stroke];
+}
+
+-(void)dealloc{
+    NSLog(@"%s",__func__);
 }
 @end

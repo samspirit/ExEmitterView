@@ -51,6 +51,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"viewDidLoad %ld",self.page);
+
+    
     self.view.backgroundColor = [UIColor whiteColor];
     UITableView *ta = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     [self.view addSubview:ta];

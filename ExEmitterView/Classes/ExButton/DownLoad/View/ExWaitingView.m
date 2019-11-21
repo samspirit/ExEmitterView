@@ -15,19 +15,19 @@ static const CGFloat kDefaultEmptyLineRadians = 0.4f;
 static const CGFloat kDefaultSpinTime = 1.f;
 
 @interface ExWaitingView()
+
 @property (nonatomic, weak) ExCircleView *circleView;
 @property (nonatomic, weak) NSLayoutConstraint *width;
 @property (nonatomic, weak) NSLayoutConstraint *height;
 @property (nonatomic, assign) BOOL isSpinning;
-
-- (ExCircleView *)createCircleView;
-
-- (NSArray *)createConstraints;
 @end
 
+@implementation ExWaitingView
 
-static ExWaitingView *CommonInit(ExWaitingView *self) {
-    if (self != nil) {
+#pragma mark - initialization
+-(instancetype)init
+{
+    if (self = [super init]) {
         self.circleView = [self createCircleView];
         self.circleView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:self.circleView];
@@ -42,18 +42,6 @@ static ExWaitingView *CommonInit(ExWaitingView *self) {
         [self startSpin];
     }
     return self;
-}
-
-@implementation ExWaitingView
-
-#pragma mark - initialization
-
-- (id)initWithCoder:(NSCoder *)decoder {
-    return CommonInit([super initWithCoder:decoder]);
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    return CommonInit([super initWithFrame:frame]);
 }
 
 #pragma mark - properties

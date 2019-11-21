@@ -12,8 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 IB_DESIGNABLE
 @interface ExStopDownloadButton : ExCircleProgressView
+
 /// 停止按钮的方块宽度
 @property (nonatomic, assign) IBInspectable CGFloat stopButtonWidth;
+/// 停止按钮
 @property (nonatomic, weak, readonly) UIButton *stopButton;
 @end
 

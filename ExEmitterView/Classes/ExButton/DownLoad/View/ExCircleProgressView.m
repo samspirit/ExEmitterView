@@ -30,49 +30,40 @@ static const CGFloat kStartAngle = M_PI * 1.5;
 
 @property (nonatomic, assign) CGFloat emptyLineCircleSize;
 @property (nonatomic, assign) CGFloat filledLineCircleSize;
-
-- (ExCircleView *)createEmptyLineCircleView;
-- (ExCircleView *)createFilledLineCircleView;
-
-- (NSArray *)createCircleConstraints;
 @end
-
-static ExCircleProgressView *CommonInit(ExCircleProgressView *self) {
-    if (self != nil) {
-        self.backgroundColor = [UIColor clearColor];
-        self.startAngle = kStartAngle;
-        self.endAngle = self.startAngle + (M_PI * 2);
-        self.clipsToBounds = NO;
-        
-        ExCircleView *emptyLineCircleView = [self createEmptyLineCircleView];
-        self.emptyLineCircleView = emptyLineCircleView;
-        emptyLineCircleView.translatesAutoresizingMaskIntoConstraints = NO;
-        [self addSubview:emptyLineCircleView];
-        
-        ExCircleView *filledLineCircleView = [self createFilledLineCircleView];
-        self.filledLineCircleView = filledLineCircleView;
-        filledLineCircleView.translatesAutoresizingMaskIntoConstraints = NO;
-        [self addSubview:filledLineCircleView];
-        
-        [self addConstraints:[self createCircleConstraints]];
-        
-        self.emptyLineWidth = kDefaultEmptyLineWidth;
-        self.filledLineWidth = kDefaultFilledLineWidth;
-        self.radius = kDefaultRaduis;
-    }
-    return self;
-}
 
 @implementation ExCircleProgressView
 
 #pragma mark - initilaization / deallocation
-
-- (id)initWithCoder:(NSCoder *)decoder {
-    return CommonInit([super initWithCoder:decoder]);
+-(instancetype)init {
+    if (self = [super init]) {
+        [self setupSubView];
+    }
+    return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    return CommonInit([super initWithFrame:frame]);
+-(void)setupSubView
+{
+    self.backgroundColor = [UIColor clearColor];
+    self.startAngle = kStartAngle;
+    self.endAngle = self.startAngle + (M_PI * 2);
+    self.clipsToBounds = NO;
+    
+    ExCircleView *emptyLineCircleView = [self createEmptyLineCircleView];
+    self.emptyLineCircleView = emptyLineCircleView;
+    emptyLineCircleView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addSubview:emptyLineCircleView];
+    
+    ExCircleView *filledLineCircleView = [self createFilledLineCircleView];
+    self.filledLineCircleView = filledLineCircleView;
+    filledLineCircleView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addSubview:filledLineCircleView];
+    
+    [self addConstraints:[self createCircleConstraints]];
+    
+    self.emptyLineWidth = kDefaultEmptyLineWidth;
+    self.filledLineWidth = kDefaultFilledLineWidth;
+    self.radius = kDefaultRaduis;
 }
 
 #pragma mark - properties
@@ -91,7 +82,6 @@ static ExCircleProgressView *CommonInit(ExCircleProgressView *self) {
     _progress = progress;
     self.filledLineCircleView.startAngleRadians = self.startAngle;
     self.filledLineCircleView.endAngleRadians = (self.endAngle - self.startAngle) * progress + self.startAngle;
-    
     [self setNeedsDisplay];
 }
 
@@ -136,13 +126,11 @@ static ExCircleProgressView *CommonInit(ExCircleProgressView *self) {
 
 - (ExCircleView *)createEmptyLineCircleView {
     ExCircleView *emptyCircelView = [[ExCircleView alloc] init];
-    
     NSLayoutConstraint *widthConstraint = [NSLayoutConstraint constraintForView:emptyCircelView withWidth:0.f];
     self.emptyLineCircleWidth = widthConstraint;
     [emptyCircelView addConstraint:widthConstraint];
     
-    NSLayoutConstraint *heightConstraint = [NSLayoutConstraint constraintForView:emptyCircelView
-                                                                      withHeight:0.f];
+    NSLayoutConstraint *heightConstraint = [NSLayoutConstraint constraintForView:emptyCircelView withHeight:0.f];
     self.emptyLineCircleHeight = heightConstraint;
     [emptyCircelView addConstraint:heightConstraint];
     
@@ -165,10 +153,8 @@ static ExCircleProgressView *CommonInit(ExCircleProgressView *self) {
 
 - (NSArray *)createCircleConstraints {
     NSMutableArray *constraints = [NSMutableArray array];
-    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForCenterView:self.emptyLineCircleView
-                                                                         withView:self]];
-    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForWrappedSubview:self.filledLineCircleView
-                                                                           withInsets:UIEdgeInsetsZero]];
+    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForCenterView:self.emptyLineCircleView withView:self]];
+    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForWrappedSubview:self.filledLineCircleView withInsets:UIEdgeInsetsZero]];
     return constraints;
 }
 

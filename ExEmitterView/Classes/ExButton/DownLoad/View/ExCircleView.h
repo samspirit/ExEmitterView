@@ -16,7 +16,6 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable CGFloat endAngleRadians;
 @property (nonatomic, assign) IBInspectable CGFloat lineWidth;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -24,31 +24,34 @@ NSAssert2((resultObj_) == nil || [(resultObj_) isKindOfClass:[destClass_ class]]
 @property (nonatomic, weak) ExWaitingView *waitingView;
 
 @property (nonatomic, strong) NSMutableArray *stateViews;
-
-- (ExButtonBorder *)createStartDownloadButton;
-- (ExStopDownloadButton *)createStopDownloadButton;
-- (ExButtonBorder *)createDownloadedButton;
-- (ExWaitingView *)createWaitingView;
-
-- (void)currentButtonTapped:(id)sender;
-
-- (void)createSubviews;
-- (NSArray *)createConstraints;
 @end
 
-static ExDownloadButton *CommonInit(ExDownloadButton *self) {
-    if (self != nil) {
-        [self createSubviews];
-        [self addConstraints:[self createConstraints]];
-        
-        self.state = kExDownloadButtonState_Start;
-        self.backgroundColor = [UIColor clearColor];
+@implementation ExDownloadButton
+
+#pragma mark - Initialization
+-(instancetype)init
+{
+    if (self = [super init]) {
+        [self setupSubView];
     }
     return self;
 }
 
+-(instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        [self setupSubView];
+    }
+    return self;
+}
 
-@implementation ExDownloadButton
+-(void)setupSubView
+{
+    [self createSubviews];
+    [self addConstraints:[self createConstraints]];
+    self.state = kExDownloadButtonState_Start;
+    self.backgroundColor = [UIColor clearColor];
+}
 
 #pragma mark - Properties
 - (void)setState:(ExDownloadButtonState)state {
@@ -79,16 +82,6 @@ static ExDownloadButton *CommonInit(ExDownloadButton *self) {
     }
 }
 
-#pragma mark - Initialization
-
-- (id)initWithCoder:(NSCoder *)decoder {
-    return CommonInit([super initWithCoder:decoder]);
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    return CommonInit([super initWithFrame:frame]);
-}
-
 - (void)tintColorDidChange {
     [super tintColorDidChange];
     
@@ -116,7 +109,7 @@ static ExDownloadButton *CommonInit(ExDownloadButton *self) {
 }
 
 - (void)updateButton:(UIButton *)button title:(NSString *)title {
-    [self updateButton:button title:title font:[UIFont systemFontOfSize:14.f]];
+    [self updateButton:button title:title font:[UIFont systemFontOfSize:12.f]];
 }
 
 - (void)updateButton:(UIButton *)button title:(NSString *)title font:(UIFont *)font {
@@ -127,8 +120,7 @@ static ExDownloadButton *CommonInit(ExDownloadButton *self) {
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:self.tintColor forState:UIControlStateNormal];
     [button setTitleColor:UIColor.whiteColor forState:UIControlStateHighlighted];
-    
-    button.titleLabel.font = font;
+    [button.titleLabel setFont:font];
 }
 
 #pragma mark - private methods
@@ -136,26 +128,21 @@ static ExDownloadButton *CommonInit(ExDownloadButton *self) {
 - (ExButtonBorder *)createStartDownloadButton {
     ExButtonBorder *startDownloadButton = [ExButtonBorder buttonWithType:UIButtonTypeCustom];
     [startDownloadButton configureDefaultAppearance];
-    
     [self updateButton:startDownloadButton title:@"DOWNLOAD"];
-    
     [startDownloadButton addTarget:self action:@selector(currentButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     return startDownloadButton;
 }
 
 - (ExStopDownloadButton *)createStopDownloadButton {
     ExStopDownloadButton *stopDownloadButton = [[ExStopDownloadButton alloc] init];
-    [stopDownloadButton.stopButton addTarget:self action:@selector(currentButtonTapped:)
-                            forControlEvents:UIControlEventTouchUpInside];
+    [stopDownloadButton.stopButton addTarget:self action:@selector(currentButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     return stopDownloadButton;
 }
 
 - (ExButtonBorder *)createDownloadedButton {
     ExButtonBorder *downloadedButton = [ExButtonBorder buttonWithType:UIButtonTypeCustom];
     [downloadedButton configureDefaultAppearance];
-
     [self updateButton:downloadedButton title:@"REMOVE"];
-    
     [downloadedButton addTarget:self action:@selector(currentButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     return downloadedButton;
 }
@@ -201,13 +188,10 @@ static ExDownloadButton *CommonInit(ExDownloadButton *self) {
 
 - (NSArray *)createConstraints {
     NSMutableArray *constraints = [NSMutableArray array];
-    
     [self.stateViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         SafeObjClassCast(UIView, view, obj);
-        [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForWrappedSubview:view
-                                                                               withInsets:UIEdgeInsetsZero]];
+        [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForWrappedSubview:view withInsets:UIEdgeInsetsZero]];
     }];
-    
     return constraints;
 }
 @end

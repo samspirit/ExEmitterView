@@ -14,16 +14,15 @@ static const CGFloat kDefaultStopButtonWidth = 8.f;
 @interface ExStopDownloadButton()
 
 @property (nonatomic, weak) UIButton *stopButton;
-
-- (UIButton *)createStopButton;
-- (NSArray *)createStopButtonConstraints;
-- (void)updateAppearance;
-- (ExCircleProgressView *)createCircleProgressView;
 @end
 
+@implementation ExStopDownloadButton
 
-static ExStopDownloadButton *CommonInit(ExStopDownloadButton *self) {
-    if (self != nil) {
+#pragma mark - initialization
+
+-(instancetype)init
+{
+    if (self = [super init]) {
         UIButton *stopButton = [self createStopButton];
         stopButton.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:stopButton];
@@ -36,24 +35,12 @@ static ExStopDownloadButton *CommonInit(ExStopDownloadButton *self) {
     return self;
 }
 
-@implementation ExStopDownloadButton
-
 #pragma mark - properties
 
 - (void)setStopButtonWidth:(CGFloat)stopButtonWidth {
     _stopButtonWidth = stopButtonWidth;
     [self.stopButton setImage:[UIImage stopImageOfSize:stopButtonWidth color:self.tintColor] forState:UIControlStateNormal];
     [self setNeedsDisplay];
-}
-
-#pragma mark - initialization
-
-- (instancetype)initWithCoder:(NSCoder *)decoder {
-    return CommonInit([super initWithCoder:decoder]);
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    return CommonInit([super initWithFrame:frame]);
 }
 
 #pragma mark - private methods

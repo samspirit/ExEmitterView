@@ -20,13 +20,9 @@ typedef NS_ENUM(NSUInteger, ExDownloadButtonState) {
     kExDownloadButtonState_Done         /// 下载完成
 };
 @class ExDownloadButton;
-
 typedef void(^DownloadButtonTappedCallback)(ExDownloadButton *downloadButton, ExDownloadButtonState state);
-
 @protocol ExDownloadButtonDelegate <NSObject>
-
 - (void)downloadButtonTapped:(ExDownloadButton *)downloadButton currentState:(ExDownloadButtonState)state;
-
 @end
 
 IB_DESIGNABLE
@@ -35,10 +31,10 @@ IB_DESIGNABLE
 @property (nonatomic, weak) id <ExDownloadButtonDelegate> delegate;
 @property (nonatomic, copy) DownloadButtonTappedCallback callback;
 
-@property (nonatomic, weak, readonly) ExButtonBorder *startDownloadButton;
-@property (nonatomic, weak, readonly) ExStopDownloadButton *stopDownloadButton;
-@property (nonatomic, weak, readonly) ExButtonBorder *downloadedButton;
-@property (nonatomic, weak, readonly) ExWaitingView *waitingView;
+@property (nonatomic, weak, readonly) ExButtonBorder        *startDownloadButton;
+@property (nonatomic, weak, readonly) ExStopDownloadButton  *stopDownloadButton;
+@property (nonatomic, weak, readonly) ExButtonBorder        *downloadedButton;
+@property (nonatomic, weak, readonly) ExWaitingView         *waitingView;
 /// button 状态
 @property (nonatomic, assign) ExDownloadButtonState state;
 // 设置开始下载的文字
