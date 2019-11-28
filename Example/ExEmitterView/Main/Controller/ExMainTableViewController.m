@@ -14,6 +14,8 @@
 
 #import "ExPageViewController.h"
 
+#import "ExLongPressViewController.h"
+
 @interface ExMainTableViewController ()
 @property (nonatomic, strong) ExMainTableViewModel *viewModel;
 @property (nonatomic, strong) NSMutableArray *group;
@@ -41,9 +43,9 @@
     item1.title = @"Page Control";
     item1.descVc = [ExPageViewController class];
     
-    ExLabelItem *item2 = [ExLabelItem itemWithTitle:@"通用0"];
-    item2.title = @"通用2";
-    
+    ExLabelItem *item2 = [ExLabelItem itemWithTitle:@"Long Press"];
+    item2.title = @"Long Press";
+    item2.descVc = [ExLongPressViewController class];
     
     ExGroupItem *group = [[ExGroupItem alloc] init];
     group.items = @[item0,item1,item2];

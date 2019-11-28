@@ -13,4 +13,6 @@
 #import "ExDownloadButton.h"
 // Page Control
 #import "ExPageController.h"
+
+#import "ExLongPressButton.h"
 #endif /* ExEmitterView_h */
