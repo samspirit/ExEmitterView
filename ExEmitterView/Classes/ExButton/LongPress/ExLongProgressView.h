@@ -1,5 +1,5 @@
 //
-//  ExLongPressButtonBottomView.h
+//  ExLongProgressView.h
 //  ExEmitterView
 //
 //  Created by ecarx on 2019/11/28.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ExLongPressButtonBottomView : UIView
+@interface ExLongProgressView : UIView
 
 @property (assign, nonatomic) float endAngle;   // 结束角
 @property (strong, nonatomic) UIColor *progressColor; //进度条颜色

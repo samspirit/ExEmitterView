@@ -1,5 +1,5 @@
 //
-//  ExLongPressButtonTopView.h
+//  ExLongCircularView.h
 //  ExEmitterView
 //
 //  Created by ecarx on 2019/11/28.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ExLongPressButtonTopView : UIView
+@interface ExLongCircularView : UIView
 
 @end
 

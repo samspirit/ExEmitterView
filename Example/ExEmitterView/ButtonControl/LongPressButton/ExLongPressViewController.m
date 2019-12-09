@@ -26,10 +26,10 @@
     [titleLabel setTextColor:[UIColor redColor]];
     [self.view addSubview:titleLabel];
     
-    
-    ExLongPressButton *longPressBtn = [[ExLongPressButton alloc] initWithFrame:CGRectMake(150, 250, 50, 50)];
+    ExLongPressButton *longPressBtn = [[ExLongPressButton alloc] initWithFrame:CGRectMake(150, 250, 150, 150)];
+    longPressBtn.maxPressTime = 2;
     [longPressBtn setTopColor:[UIColor whiteColor]];
-    [longPressBtn setProgressColor:[UIColor redColor]];
+    [longPressBtn setProgressColor:[UIColor colorWithRed:29/255.0 green:161/255.0 blue:243/255.0 alpha:1]];
     [self.view addSubview:longPressBtn];
 
     longPressBtn.tapCompleteHandler = ^{

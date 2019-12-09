@@ -20,13 +20,17 @@ typedef void(^CancelLongPressCompleteHandler)(void);
 
 @interface ExLongPressButton : UIControl
 
-///按钮中心颜色，默认红色
+/// 按钮中心颜色，默认红色
 @property (strong, nonatomic) UIColor *topColor;
-///进度条颜色
+/// 进度条颜色
 @property (strong, nonatomic) UIColor *progressColor;
-///最长的长按时间，默认为2s
+/// 最长的长按时间，默认为5s
 @property (assign, nonatomic) float maxPressTime;
-///点击
+/// 是否需要遮罩 默认 YES
+@property (assign, nonatomic) BOOL isMaskView;
+/// 是否需要振动 默认 YES
+@property (assign, nonatomic) BOOL isVibration;
+/// 点击回调
 @property (copy, nonatomic) TapCompleteHandler tapCompleteHandler;
 /// 开始长按
 @property (copy, nonatomic) StartLongPressCompleteHandler startLongPressCompleteHandler;

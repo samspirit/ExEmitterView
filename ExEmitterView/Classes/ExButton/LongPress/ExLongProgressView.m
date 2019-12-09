@@ -1,30 +1,27 @@
 //
-//  ExLongPressButtonBottomView.m
+//  ExLongProgressView.m
 //  ExEmitterView
 //
 //  Created by ecarx on 2019/11/28.
 //
 
-#import "ExLongPressButtonBottomView.h"
+#import "ExLongProgressView.h"
 
-@implementation ExLongPressButtonBottomView
+@implementation ExLongProgressView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         self.userInteractionEnabled = NO;
         self.backgroundColor = [UIColor clearColor];
-        self.progressColor = [UIColor colorWithRed:29/255.0 green:161/255.0 blue:243/255.0 alpha:1];
     }
     return self;
-    
 }
 
 - (void)setEndAngle:(float)endAngle {
     _endAngle = endAngle;
     [self setNeedsDisplay];
 }
-
 
 - (void)drawRect:(CGRect)rect {
     CGContextRef contextRef = UIGraphicsGetCurrentContext();
