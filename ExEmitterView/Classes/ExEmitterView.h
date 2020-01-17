@@ -13,6 +13,8 @@
 #import "ExDownloadButton.h"
 // Page Control
 #import "ExPageController.h"
-
+// 长按进度条按钮
 #import "ExLongPressButton.h"
+// 边框循环动画
+#import "ExCycleLineButton.h"
 #endif /* ExEmitterView_h */

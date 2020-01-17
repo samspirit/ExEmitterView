@@ -50,6 +50,10 @@
     self.maskView.hidden = NO;
     self.hasTouchTime = 0;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(drawBottomRect) userInfo:nil repeats:YES];
+    
+    
+    self.timer = [NSTimer timerWithTimeInterval:0.02 target:self selector:@selector(drawBottomRect) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -71,10 +75,7 @@
             }
         }
     }
-    if (self.timer) {
-        [self.timer invalidate];
-        self.timer = nil;
-    }
+    [self stopTimer];
     self.progressView.endAngle = 0;
     
     [UIView animateWithDuration:.35
@@ -106,14 +107,22 @@
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
         }
         // 结束
-        if (self.timer) {
-            [self.timer invalidate];
-            self.timer = nil;
-        }
+        [self stopTimer];
         __block float time = self.hasTouchTime;
         if (self.endLongPressCompleteHandler) {
             self.endLongPressCompleteHandler(time);
         }
+    }
+}
+
+#pragma mark - NSTimer
+-(void)startTimer {
+    
+}
+-(void)stopTimer {
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
     }
 }
 
